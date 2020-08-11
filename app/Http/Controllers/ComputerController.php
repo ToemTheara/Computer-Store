@@ -14,8 +14,8 @@ class ComputerController extends Controller
      */
     public function index()
     {
-        $computers = Computer::latest()->paginate(5);
-        return view('web_admin.computers.index', compact('computers'))->with('i',(request()->input('page',1)-1)*5);
+        $computers = Computer::latest()->paginate(3);
+        return view('web_admin.computers.index', compact('computers'))->with('i',(request()->input('page',1)-1)*3);
     }
 
     /**
@@ -41,9 +41,30 @@ class ComputerController extends Controller
             'name' => 'required',
             'type' => 'required',
         ]);
+        $computer = new Computer();
+        $computer->image = $request->input('image');
+        $computer->name = $request->input('name');
+        $computer->type = $request->input('type');
+        $computer->price = $request->input('price');
+        $computer->cpu = $request->input('cpu');
+        $computer->ram = $request->input('ram');
+        $computer->storage = $request->input('storage');
+        $computer->detail = $request->input('detail');
 
-        Computer::create($request->all());
-        return redirect()->route('computers.index')->with('success','Computer Created');
+        if($request->hasFile('image')){
+            $fileNameWithExt = $request->file('image')->getClientOriginalName();
+            $filename = pathinfo($fileNameWithExt,PATHINFO_FILENAME);
+            $extention = $request->file('image')->getClientOriginalExtension();
+            $fileNameToStore = $filename.'-'.time().'.'.$extention;
+            $path = $request->file('image')->storeAs('public/images',$fileNameToStore);
+        }else {
+            $fileNameToStore = 'noimage.jpg';
+        }
+            $computer->image = $fileNameToStore;
+            $computer->save();
+
+            return redirect()->route('computers.index')->with('success','Computer Created!');
+
     }
 
     /**
@@ -75,14 +96,30 @@ class ComputerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Computer $computer)
+    public function update(Request $request, $computer_id)
+
     {
-        $request->validate([
-            'image' => 'required',
-            'name' => 'required',
-            'type' => 'required',
-        ]);
-        $computer->update($request->all());
+        $computer = Computer::find($computer_id);
+        $computer->image = $request->input('image');
+        $computer->name = $request->input('name');
+        $computer->type = $request->input('type');
+        $computer->price = $request->input('price');
+        $computer->cpu = $request->input('cpu');
+        $computer->ram = $request->input('ram');
+        $computer->storage = $request->input('storage');
+        $computer->detail = $request->input('detail');
+        if($request->hasFile('image')){
+            $fileNameWithExt = $request->file('image')->getClientOriginalName();
+            $filename = pathinfo($fileNameWithExt,PATHINFO_FILENAME);
+            $extention = $request->file('image')->getClientOriginalExtension();
+            $fileNameToStore = $filename.'-'.time().'.'.$extention;
+            $path = $request->file('image')->storeAs('public/images',$fileNameToStore);
+        }else {
+            $fileNameToStore = 'noimage.jpg';
+        }
+            $computer->image = $fileNameToStore;
+            $computer->save();
+
         return redirect()->route('computers.index')->with('success','Computer Updated');
     }
 

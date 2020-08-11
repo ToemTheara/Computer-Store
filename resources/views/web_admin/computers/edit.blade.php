@@ -72,7 +72,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Description:</strong>
-                <textarea class="form-control" style="height:100px" name="detail"  value="{{$computer->detail}}"></textarea>
+                <input class="form-control" style="height:100px" name="detail"  value="{{$computer->detail}}">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

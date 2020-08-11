@@ -36,10 +36,10 @@
 
         <tr>
             <td>{{++$i}}</td>
-            <td><img src="{{ URL::to('/') }}/images/{{ $computer->image }}" class="img-thumbnail" width="75" /></td>
+            <td><img src="storage/images/{{$computer->image}}" class="img-thumbnail" width="75" height="100" alt="Image" alt="Image"></td>
             <td>{{$computer->name}}</td>
             <td>{{$computer->type}}</td>
-            <td>{{$computer->price}}</td>
+            <td>{{$computer->price}}$</td>
             <td>{{$computer->cpu}}</td>
             <td>{{$computer->ram}}</td>
             <td>{{$computer->storage}}</td>
