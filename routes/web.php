@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('web_user.home');
 });
+
+
+Route::resource('computers', 'ComputerController');
+
