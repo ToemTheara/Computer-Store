@@ -26,13 +26,13 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                    <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
+                    <img class="d-block img-fluid" style="width:900px; height:350px; " src="https://www.ultrabookreview.com/wp-content/uploads/2020/04/rog-scar-15-2020.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                    <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
+                    <img class="d-block img-fluid" style="width:900px; height:350px;"  src="https://tech4gamers.com/wp-content/uploads/2020/05/Asus-ROG-Strix-Scar-17-G732LXS-740x356-1.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                    <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
+                    <img class="d-block img-fluid" style="width:900px; height:350px;" src="https://www.techhub.in.th/wp-content/uploads/2020/06/Facebook-Post_New-Model-ROG_20200622-02.jpg" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
