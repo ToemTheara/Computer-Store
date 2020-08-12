@@ -45,26 +45,28 @@
                 </a>
                 </div>
                     <div class="row">
-                        @foreach ($computers as $computer)
+                        @foreach ($msi as $msi)
+
                             <div class="col-lg-4 col-md-6 mb-4">
                                 <div class="card h-100">
-                                <a href="#"><img class="card-img-top" src="storage/images/{{$computer->image}}" alt="Computer"></a>
+                                <a href="#"><img class="card-img-top" src="storage/images/{{$msi->image}}" alt="Computer"></a>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                    <a href="#">{{$computer->name}}</a>
+                                    <a href="#">{{$msi->name}}</a>
                                     </h4>
-                                    <h5>${{$computer->price}}</h5>
-                                    <p class="card-text">{{$computer->detail}}</p>
+                                    <h5>{{$msi->price}}</h5>
+                                    <p class="card-text">{{$msi->detail}}</p>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <small class="text-muted">Date: {{$computer->created_at}}</small>
+                                    <small class="text-muted">Date: {{$msi->created_at}}</small>
                                 </div>
                                 </div>
                             </div>
+
                         @endforeach
                     </div>
                     <!-- /.row -->
-                    {!! $computers->links() !!}
+
 
                 </div>
             <!-- /.col-lg-9 -->
