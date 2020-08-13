@@ -16,12 +16,12 @@ use Illuminate\Support\Facades\Route;
 
 
 #Route for User Page
-Route::get('/', 'CategoryController@AllCategory');
-Route::get('/apple', 'CategoryController@Apple');
-Route::get('/msi', 'CategoryController@Msi');
-Route::get('/dell', 'CategoryController@Dell');
-Route::get('/lenovo', 'CategoryController@Lenovo');
-Route::get('/asus', 'CategoryController@Asus');
+Route::get('/', 'AllComputerController@index');
+Route::get('/apple', 'AppleController@index');
+Route::get('/msi', 'MsiController@index');
+Route::get('/dell', 'DellController@index');
+Route::get('/lenovo', 'LenovoController@index');
+Route::get('/asus', 'AsusController@index');
 
 #Route for Admin Page
 Route::resource('computers', 'ComputerController');
