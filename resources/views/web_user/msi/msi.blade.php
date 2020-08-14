@@ -9,7 +9,7 @@
                     <div class="list-group text-center">
                         <a href="/" class="list-group-item">ALL COMPUTER</a>
                         <a href="/apple" class="list-group-item">APPLE COMPUTER</a>
-                        <a href="/msi" class="list-group-item">MSI COMPUTER</a>
+                        <a href="/msi" class="list-group-item"><button class="btn btn-outline-primary ">MSI COMPUTER</button></a>
                         <a href="/dell" class="list-group-item">DELL COMPUTER</a>
                         <a href="/lenovo" class="list-group-item">LENOVO COMPUTER</a>
                         <a href="/asus" class="list-group-item">ASUS COMPUTER</a>
@@ -43,6 +43,9 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
+                </div>
+                <div>
+                    <button class="btn btn-outline-primary ">MSI Computer>>></button>
                 </div>
                     <div class="row">
                         @foreach ($msi_computers as $msi)

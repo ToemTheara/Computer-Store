@@ -11,3 +11,4 @@
   <!-- Custom styles for this template -->
   <link href="{{asset('templates/css/shop-homepage.css')}}" rel="stylesheet">
   <link href="{{asset('style.css')}}" rel="stylesheet">
+  
