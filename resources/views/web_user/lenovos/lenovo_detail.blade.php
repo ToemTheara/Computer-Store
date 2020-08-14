@@ -48,32 +48,26 @@
                         <div class="container">
                             <div class="card">
                                 <div class="container-fliud">
-                                    <div class="wrapper row">
-                                        <div class="preview col-md-6">
-                                            <div class="preview-pic tab-content">
-                                            <div class="tab-pane active" id="pic-1"><img style="width:300px; height:300px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmsDL9Y-tESlBfTmY_T6d41uVNM3NoqJ-nHQ&usqp=CAU" /></div>
-                                            </div>
-                                        </div>
-                                        <div class="details col-md-6">
-                                            <h3 class="product-title">shoes fashion</h3>
-                                            <div class="rating">
-                                                <div class="stars">
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span>
+                                            <div class="wrapper row">
+                                                <div class="preview col-md-6">
+                                                    <div class="preview-pic tab-content">
+                                                    <div class="tab-pane active" id="pic-1"><img style="width:400px; height:400px;" src="/storage/images/{{$lenovo->image}}" /></div>
+                                                    </div>
                                                 </div>
-                                                <span class="review-no">41 reviews</span>
+                                                <div class="details col-md-6">
+                                                    <h3 class="product-title">{{$lenovo->name}}</h3>
+                                                    <small class="product-description">Create at:{{$lenovo->created_at}}</small>
+                                                    <h4 class="price">Price: <span>${{$lenovo->price}}</span></h4>
+                                                    <p class="product-description">{{$lenovo->cpu}}</p>
+                                                    <p class="product-description">{{$lenovo->ram}}</p>
+                                                    <p class="product-description">{{$lenovo->storage}}</p>
+                                                    <p class="product-description">{{$lenovo->detail}}</p>
+                                                    <div class="action">
+                                                        <button class="btn btn-danger" type="button">Add to cart</button>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <h4 class="price">Price: <span>$180</span></h4>
-                                            <h4 class="price">Description:</h4>
-                                            <p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
-                                            <div class="action">
-                                                <button class="btn btn-danger" type="button">add to cart</button>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>

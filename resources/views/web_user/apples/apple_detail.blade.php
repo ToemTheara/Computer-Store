@@ -12,7 +12,7 @@
                         <a href="/msi" class="list-group-item">MSI COMPUTER</a>
                         <a href="/dell" class="list-group-item">DELL COMPUTER</a>
                         <a href="/lenovo" class="list-group-item">LENOVO COMPUTER</a>
-                        <a href="/asus" class="list-group-item">ASUS COMPUTER </a>
+                        <a href="/asus" class="list-group-item">ASUS COMPUTER</a>
                     </div>
                 </div>
             <!-- /.col-lg-3 -->
@@ -45,28 +45,34 @@
                 </a>
                 </div>
                     <div class="row">
-                        @foreach ($asus as $asus)
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">
-                                <a href="#"><img class="card-img-top" src="storage/images/{{$asus->image}}" alt="Computer"></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                    <a href="#">{{$asus->name}}</a>
-                                    </h4>
-                                    <h5>{{$asus->price}}</h5>
-                                    <p class="card-text">{{$asus->detail}}</p>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <small class="text-muted">Date: {{$asus->created_at}}</small>
-                                </div>
+                        <div class="container">
+                            <div class="card">
+                                <div class="container-fliud">
+                                            <div class="wrapper row">
+                                                <div class="preview col-md-6">
+                                                    <div class="preview-pic tab-content">
+                                                    <div class="tab-pane active" id="pic-1"><img style="width:400px; height:400px;" src="/storage/images/{{$apple->image}}" /></div>
+                                                    </div>
+                                                </div>
+                                                <div class="details col-md-6">
+                                                    <h3 class="product-title">{{$apple->name}}</h3>
+                                                    <small class="product-description">Create at:{{$apple->created_at}}</small>
+                                                    <h4 class="price">Price: <span>${{$apple->price}}</span></h4>
+                                                    <p class="product-description">{{$apple->cpu}}</p>
+                                                    <p class="product-description">{{$apple->ram}}</p>
+                                                    <p class="product-description">{{$apple->storage}}</p>
+                                                    <p class="product-description">{{$apple->detail}}</p>
+                                                    <div class="action">
+                                                        <button class="btn btn-danger" type="button">Add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                 </div>
                             </div>
-
-                        @endforeach
+                        </div>
                     </div>
                     <!-- /.row -->
-
-
                 </div>
             <!-- /.col-lg-9 -->
 

@@ -45,29 +45,34 @@
                 </a>
                 </div>
                     <div class="row">
-                        @foreach ($msi as $msi)
+                        <div class="container">
+                            <div class="card">
+                                <div class="container-fliud">
+                                            <div class="wrapper row">
+                                                <div class="preview col-md-6">
+                                                    <div class="preview-pic tab-content">
+                                                    <div class="tab-pane active" id="pic-1"><img style="width:400px; height:400px;" src="/storage/images/{{$asus->image}}" /></div>
+                                                    </div>
+                                                </div>
+                                                <div class="details col-md-6">
+                                                    <h3 class="product-title">{{$asus->name}}</h3>
+                                                    <small class="product-description">Create at:{{$asus->created_at}}</small>
+                                                    <h4 class="price">Price: <span>${{$asus->price}}</span></h4>
+                                                    <p class="product-description">{{$asus->cpu}}</p>
+                                                    <p class="product-description">{{$asus->ram}}</p>
+                                                    <p class="product-description">{{$asus->storage}}</p>
+                                                    <p class="product-description">{{$asus->detail}}</p>
+                                                    <div class="action">
+                                                        <button class="btn btn-danger" type="button">Add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">
-                                <a href="#"><img class="card-img-top" src="storage/images/{{$msi->image}}" alt="Computer"></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                    <a href="#">{{$msi->name}}</a>
-                                    </h4>
-                                    <h5>{{$msi->price}}</h5>
-                                    <p class="card-text">{{$msi->detail}}</p>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <small class="text-muted">Date: {{$msi->created_at}}</small>
-                                </div>
                                 </div>
                             </div>
-
-                        @endforeach
+                        </div>
                     </div>
                     <!-- /.row -->
-
-
                 </div>
             <!-- /.col-lg-9 -->
 

@@ -14,8 +14,8 @@ class DellController extends Controller
      */
     public function index()
     {
-        $dell = Computer::Where('type',"dell")->get();
-        return view('web_user.dell', compact('dell'));
+        $dells = Computer::Where('type',"dell")->paginate(3);
+        return view('web_user.dells.dell')->with('dells',$dells);
     }
 
     /**
@@ -45,9 +45,10 @@ class DellController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($computer_id)
     {
-        //
+        $dell =  Computer::find($computer_id);
+        return view('web_user.dells.dell_detail')->with('dell',$dell);
     }
 
     /**

@@ -14,8 +14,8 @@ class AsusController extends Controller
      */
     public function index()
     {
-        $asus = Computer::Where('type',"asus")->get();
-        return view('web_user.asus', compact('asus'));
+        $asuses = Computer::Where('type',"asus")->paginate(3);
+        return view('web_user.asus.asus')->with('asuses',$asuses);
     }
 
     /**
@@ -45,9 +45,10 @@ class AsusController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($computer_id)
     {
-        //
+        $asus =  Computer::find($computer_id);
+        return view('web_user.asus.asus_detail')->with('asus',$asus);
     }
 
     /**

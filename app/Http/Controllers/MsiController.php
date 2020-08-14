@@ -14,8 +14,8 @@ class MsiController extends Controller
      */
     public function index()
     {
-        $msi = Computer::Where('type',"msi")->get();
-        return view('web_user.msi', compact('msi'));
+        $msi_computers  = Computer::Where('type',"msi")->paginate(3);
+        return view('web_user.msi.msi')->with('msi_computers',$msi_computers );
     }
 
     /**
@@ -45,9 +45,10 @@ class MsiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($computer_id)
     {
-        //
+        $msi =  Computer::find($computer_id);
+        return view('web_user.msi.msi_detail')->with('msi',$msi);
     }
 
     /**

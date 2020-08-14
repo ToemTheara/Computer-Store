@@ -45,15 +45,15 @@
                 </a>
                 </div>
                     <div class="row">
-                        @foreach ($apple as $apple)
+                        @foreach ($apples as $apple)
                             <div class="col-lg-4 col-md-6 mb-4">
                                 <div class="card h-100">
-                                <a href="#"><img class="card-img-top" src="storage/images/{{$apple->image}}" alt="Computer"></a>
+                                <a href="/apple_detail/{{$apple->computer_id}}"><img class="card-img-top" src="storage/images/{{$apple->image}}" alt="Computer"></a>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                    <a href="#">{{$apple->name}}</a>
+                                    <a href="/apple_detail/{{$apple->computer_id}}">{{$apple->name}}</a>
                                     </h4>
-                                    <h5>{{$apple->price}}</h5>
+                                    <h5>${{$apple->price}}</h5>
                                     <p class="card-text">{{$apple->detail}}</p>
                                 </div>
                                 <div class="card-footer text-center">
@@ -63,8 +63,10 @@
                             </div>
 
                         @endforeach
+
                     </div>
                     <!-- /.row -->
+                    {!!$apples->links()!!}
 
 
                 </div>

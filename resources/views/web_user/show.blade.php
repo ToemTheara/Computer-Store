@@ -1,4 +1,5 @@
 @extends('web_user.layouts.app')
+
     @section('content')
         <!-- Page Content -->
         <div class="container">
@@ -23,7 +24,6 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                     <img class="d-block img-fluid" style="width:900px; height:350px; " src="https://www.ultrabookreview.com/wp-content/uploads/2020/04/rog-scar-15-2020.jpg" alt="First slide">
@@ -43,29 +43,36 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
-            </div>
-
+                </div>
                     <div class="row">
-                        @foreach ($computers as $computer)
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">
-                                <a href="/computer_detail/{{$computer->computer_id}}"><img class="card-img-top" src="storage/images/{{$computer->image}}" alt="Computer"></a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                    <a href="/computer_detail/{{$computer->computer_id}}">{{$computer->name}}</a>
-                                    </h4>
-                                    <h5>${{$computer->price}}</h5>
-                                    <p class="card-text">{{$computer->detail}}</p>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <small class="text-muted">Date: {{$computer->created_at}}</small>
-                                </div>
+                        <div class="container">
+                            <div class="card">
+                                <div class="container-fliud">
+                                            <div class="wrapper row">
+                                                <div class="preview col-md-6">
+                                                    <div class="preview-pic tab-content">
+                                                    <div class="tab-pane active" id="pic-1"><img style="width:400px; height:400px;" src="/storage/images/{{$computer->image}}" /></div>
+                                                    </div>
+                                                </div>
+                                                <div class="details col-md-6">
+                                                    <h3 class="product-title">{{$computer->name}}</h3>
+                                                    <small class="product-description">Create at:{{$computer->created_at}}</small>
+                                                    <h4 class="price">Price: <span>${{$computer->price}}</span></h4>
+                                                    <p class="product-description">{{$computer->cpu}}</p>
+                                                    <p class="product-description">{{$computer->ram}}</p>
+                                                    <p class="product-description">{{$computer->storage}}</p>
+                                                    <p class="product-description">{{$computer->detail}}</p>
+                                                    <div class="action">
+                                                        <button class="btn btn-danger" type="button">Add to cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                 </div>
                             </div>
-                        @endforeach
+                        </div>
                     </div>
                     <!-- /.row -->
-                    {!! $computers->links() !!}
                 </div>
             <!-- /.col-lg-9 -->
 

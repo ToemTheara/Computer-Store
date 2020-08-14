@@ -14,8 +14,8 @@ class AppleController extends Controller
      */
     public function index()
     {
-        $apple = Computer::Where('type',"apple")->get();
-        return view('web_user.apple', compact('apple'));
+        $apples = Computer::Where('type',"apple")->paginate(3);
+        return view('web_user.apples.apple')->with('apples',$apples);
     }
 
     /**
@@ -45,9 +45,13 @@ class AppleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($computer_id)
     {
-        //
+
+        $apple =  Computer::find($computer_id);
+        return view('web_user.apples.apple_detail')->with('apple',$apple);
+
+
     }
 
     /**
