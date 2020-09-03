@@ -48,7 +48,7 @@
             <td>
                 <form action="{{route('computers.destroy',$computer->computer_id)}}" method="POST">
                     @csrf
-                    <a class="btn btn-info" href="">Show</a>
+                    {{-- <a class="btn btn-info" href="">Show</a> --}}
                     <a class="btn btn-primary" href="{{route('computers.edit',$computer->computer_id)}}">Edit</a>
                     @csrf
                     @method('DELETE')

@@ -57,13 +57,13 @@
                                                 <div class="details col-md-6">
                                                     <h3 class="product-title">{{$dell->name}}</h3>
                                                     <small class="product-description">Create at:{{$dell->created_at}}</small>
-                                                    <h4 class="price">Price: <span>${{$dell->price}}</span></h4>
+                                                    <h5 class="price">Price: <span>${{$dell->price}}</span></h5>
                                                     <p class="product-description">{{$dell->cpu}}</p>
                                                     <p class="product-description">{{$dell->ram}}</p>
                                                     <p class="product-description">{{$dell->storage}}</p>
                                                     <p class="product-description">{{$dell->detail}}</p>
                                                     <div class="action">
-                                                        <button class="btn btn-danger" type="button">Add to cart</button>
+                                                        <a href="/dell"><button class="btn btn-outline-danger" type="button"> <<< Back</button></a>
                                                     </div>
                                                 </div>
                                             </div>

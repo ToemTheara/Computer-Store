@@ -6,7 +6,7 @@
                 <div class="col-lg-3">
                     <h3 class="my-4">COMPUTER STORE</h3>
                     <div class="list-group text-center">
-                        <a href="/" class="list-group-item"><button class="btn btn-outline-primary ">ALL COMPUTER</button></a>
+                        <a href="/" class="list-group-item">ALL COMPUTER</a>
                         <a href="/apple" class="list-group-item">APPLE COMPUTER</a>
                         <a href="/msi" class="list-group-item">MSI COMPUTER</a>
                         <a href="/dell" class="list-group-item">DELL COMPUTER</a>
@@ -45,8 +45,9 @@
                 </a>
             </div>
             <div>
-                <button class="btn btn-outline-primary ">All Computer>>></button>
+                <button class="btn btn-outline-primary ">Search Results>>></button>
             </div>
+            <p> {{$computers->total()}} Results for brand'{{request()->input('query')}}'</p>
                     <div class="row" id="dynamic-search">
                         @foreach ($computers as $computer)
                             <div class="col-lg-4 col-md-6 mb-4">
@@ -67,7 +68,8 @@
                         @endforeach
                     </div>
                     <!-- /.row -->
-                    {!! $computers->links() !!}
+                    {{$computers->appends(request()->input())->links()}}
+
                 </div>
             <!-- /.col-lg-9 -->
 

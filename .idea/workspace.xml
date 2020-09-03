@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="84d49c46-61fd-4536-a8f3-f4c48c930f1b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AllComputerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AllComputerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ComputerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ComputerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_admin/computers/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_admin/computers/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_admin/computers/layouts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_admin/computers/layouts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_user/apples/apple_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/apples/apple_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_user/asus/asus_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/asus/asus_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_user/dells/dell_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/dells/dell_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_user/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_user/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_user/layouts/nav_bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/layouts/nav_bar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_user/lenovos/lenovo_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/lenovos/lenovo_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_user/msi/msi_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/msi/msi_detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_user/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1gDrm26bCDRauut5uPyftRId5rm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="84d49c46-61fd-4536-a8f3-f4c48c930f1b" name="Default Changelist" comment="" />
+      <created>1597660159272</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597660159272</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

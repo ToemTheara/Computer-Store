@@ -41,3 +41,8 @@ Route::get('/asus_detail/{computer_id}', 'AsusController@show');
 #Route for Admin Page
 Route::resource('computers', 'ComputerController');
 
+#Route for Search
+Route::get('/search-product', 'SearchController@search');
+
+
+

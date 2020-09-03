@@ -57,13 +57,13 @@
                                                 <div class="details col-md-6">
                                                     <h3 class="product-title">{{$lenovo->name}}</h3>
                                                     <small class="product-description">Create at:{{$lenovo->created_at}}</small>
-                                                    <h4 class="price">Price: <span>${{$lenovo->price}}</span></h4>
+                                                    <h5 class="price">Price: <span>${{$lenovo->price}}</span></h5>
                                                     <p class="product-description">{{$lenovo->cpu}}</p>
                                                     <p class="product-description">{{$lenovo->ram}}</p>
                                                     <p class="product-description">{{$lenovo->storage}}</p>
                                                     <p class="product-description">{{$lenovo->detail}}</p>
                                                     <div class="action">
-                                                        <button class="btn btn-danger" type="button">Add to cart</button>
+                                                        <a href="/lenovo"><button class="btn btn-outline-danger" type="button"> <<< Back</button></a>
                                                     </div>
                                                 </div>
                                             </div>

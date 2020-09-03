@@ -7,35 +7,21 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    {{--  <li class="nav-item ">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>  --}}
-                    <li class="nav-item">
-                        <form class="form-inline my-2 my-lg-0">
+                        <form class="form-inline my-2 my-lg-0" action="/search-product" method = "GET">
                             <div class="input-group input-group-sm">
-                                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Search for computer...">
+                                <input type="text" name="query" id ="search-product" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Search for computer...">
                                 <div class="input-group-append">
                                     <button type="button" class="btn btn-secondary btn-number">
                                         <i class="fa fa-search">Search</i>
                                     </button>
                                 </div>
                             </div>
-                            {{--  <a class="btn btn-outline-light btn-sm ml-3" href="cart.html">
-                                <i class="fa fa-shopping-cart"></i> Cart
-                                <span class="badge badge-light">3</span>
-                            </a>  --}}
                         </form>
                     </li>
                 </ul>
             </div>
             </div>
+         </div>
         </nav>
+
