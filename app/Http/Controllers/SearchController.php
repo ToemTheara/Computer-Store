@@ -14,4 +14,5 @@ class SearchController extends Controller
                               ->orwhere('type','like',"%$search_products%")->paginate(3);
         return view('web_user.search_products')->with('computers',$computers);
     }
+
 }

@@ -21,6 +21,8 @@ Route::get('/computer_detail/{computer_id}', 'AllComputerController@show');
 #Route for Apple Products
 Route::get('/apple', 'AppleController@index');
 Route::get('/apple_detail/{computer_id}', 'AppleController@show');
+Route::get('/apple_filter', 'AppleController@searchFilter');
+
 
 #Route for MSI Products
 Route::get('/msi', 'MsiController@index');
@@ -43,6 +45,9 @@ Route::resource('computers', 'ComputerController');
 
 #Route for Search
 Route::get('/search-product', 'SearchController@search');
+#Route for Search Model
+Route::get('/search-model', 'AppleController@searchModel');
+
 
 
 

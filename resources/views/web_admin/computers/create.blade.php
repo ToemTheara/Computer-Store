@@ -74,6 +74,18 @@
                 <textarea class="form-control" style="height:100px" name="detail" placeholder="Description"></textarea>
             </div>
         </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+            <div class="form-group">
+                <strong>Storage</strong>
+                <input type="number" name="year" class="form-control" placeholder="Year">
+            </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+            <div class="form-group">
+                <strong>Model</strong>
+                <input type="text" name="model" class="form-control" placeholder="Model">
+            </div>
+        </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Submit</button>
         </div>

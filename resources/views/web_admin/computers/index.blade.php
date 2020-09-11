@@ -29,6 +29,8 @@
             <th>RAM</th>
             <th>Storage</th>
             <th>Description</th>
+            <th>Year</th>
+            <th>Model</th>
             <th width="250px">Action</th>
         </tr>
 
@@ -44,6 +46,8 @@
             <td>{{$computer->ram}}</td>
             <td>{{$computer->storage}}</td>
             <td>{{$computer->detail}}</td>
+            <td>{{$computer->year}}</td>
+            <td>{{$computer->model}}</td>
 
             <td>
                 <form action="{{route('computers.destroy',$computer->computer_id)}}" method="POST">

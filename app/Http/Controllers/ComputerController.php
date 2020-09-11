@@ -50,6 +50,8 @@ class ComputerController extends Controller
         $computer->ram = $request->input('ram');
         $computer->storage = $request->input('storage');
         $computer->detail = $request->input('detail');
+        $computer->year = $request->input('year');
+        $computer->model = $request->input('model');
 
         if($request->hasFile('image')){
             $fileNameWithExt = $request->file('image')->getClientOriginalName();
@@ -108,6 +110,8 @@ class ComputerController extends Controller
         $computer->ram = $request->input('ram');
         $computer->storage = $request->input('storage');
         $computer->detail = $request->input('detail');
+        $computer->year = $request->input('year');
+        $computer->model = $request->input('model');
         if($request->hasFile('image')){
             $fileNameWithExt = $request->file('image')->getClientOriginalName();
             $filename = pathinfo($fileNameWithExt,PATHINFO_FILENAME);

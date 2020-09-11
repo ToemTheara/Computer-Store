@@ -72,30 +72,26 @@
                     </form>
                 </div>
                     <div class="row">
-                        @foreach ($apples as $apple)
+                        @foreach ($computers as $computer)
                             <div class="col-lg-4 col-md-6 mb-4">
                                 <div class="card h-100">
-                                <a href="/apple_detail/{{$apple->computer_id}}"><img class="card-img-top" src="storage/images/{{$apple->image}}" alt="Computer"></a>
+                                <a href="/computer_detail/{{$computer->computer_id}}"><img class="card-img-top" src="storage/images/{{$computer->image}}" alt="Computer"></a>
                                 <div class="card-body">
                                     <h4 class="card-title">
-                                    <a href="/apple_detail/{{$apple->computer_id}}">{{$apple->name}}</a>
+                                    <a href="/computer_detail/{{$computer->computer_id}}">{{$computer->name}}</a>
                                     </h4>
-                                    <h5>${{$apple->price}}</h5>
-                                    <p class="card-text">{{$apple->detail}}</p>
+                                    <h5>${{$computer->price}}</h5>
+                                    <p class="card-text">{{$computer->detail}}</p>
                                 </div>
                                 <div class="card-footer text-center">
-                                    <small class="text-muted">Date: {{$apple->created_at}}</small>
+                                    <small class="text-muted">Date: {{$computer->created_at}}</small>
                                 </div>
                                 </div>
                             </div>
-
                         @endforeach
-
                     </div>
                     <!-- /.row -->
-                    {!!$apples->links()!!}
-
-
+                    {{$computers->appends(request()->input())->links()}}
                 </div>
             <!-- /.col-lg-9 -->
 

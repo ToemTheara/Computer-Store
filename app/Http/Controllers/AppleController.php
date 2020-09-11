@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Computer;
 
 use Illuminate\Http\Request;
+use DB;
 
 class AppleController extends Controller
 {
@@ -86,5 +87,20 @@ class AppleController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function model(){
+        $models = Computer::Where('type',"apple")->get();
+        return view('web_user.apples.apple')->with('models',$models);
+
+    }
+    public function searchModel(Request $request)
+    {
+        $search_model = $request->input('model');
+        $search_year = $request->input('year');
+        $computers = DB::table('computers')
+                       ->where('model',$search_model)
+                       ->where('year',$search_year)
+                       ->paginate(3);
+        return view('web_user.apples.apple_filter')->with('computers',$computers);
     }
 }

@@ -47,7 +47,8 @@
             <div>
                 <button class="btn btn-outline-primary ">Search Results>>></button>
             </div>
-            <p> {{$computers->total()}} Results for brand'{{request()->input('query')}}'</p>
+
+            <p> {{$computers->total()}} Results for '{{request()->input('query')}}'</p>
                     <div class="row" id="dynamic-search">
                         @foreach ($computers as $computer)
                             <div class="col-lg-4 col-md-6 mb-4">

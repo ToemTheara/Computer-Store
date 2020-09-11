@@ -47,6 +47,7 @@
                 <div>
                     <button class="btn btn-outline-primary ">MSI Computer>>></button>
                 </div>
+
                     <div class="row">
                         @foreach ($msi_computers as $msi)
 

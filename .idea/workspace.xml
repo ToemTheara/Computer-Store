@@ -20,19 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84d49c46-61fd-4536-a8f3-f4c48c930f1b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AllComputerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AllComputerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Computer.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Computer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AppleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AppleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ComputerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ComputerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SearchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SearchController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_10_133809_create_computers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_10_133809_create_computers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_admin/computers/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_admin/computers/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_admin/computers/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_admin/computers/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/web_admin/computers/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_admin/computers/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/web_admin/computers/layouts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_admin/computers/layouts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/web_user/apples/apple_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/apples/apple_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/web_user/asus/asus_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/asus/asus_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/web_user/dells/dell_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/dells/dell_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/web_user/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/web_user/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/layouts/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/web_user/layouts/nav_bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/layouts/nav_bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/web_user/lenovos/lenovo_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/lenovos/lenovo_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/web_user/msi/msi_detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/msi/msi_detail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/web_user/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_user/apples/apple.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/apples/apple.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_user/msi/msi.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/msi/msi.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/web_user/search_products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/web_user/search_products.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -75,6 +75,19 @@
                 <input class="form-control" style="height:100px" name="detail"  value="{{$computer->detail}}">
             </div>
         </div>
+
+        <div class="col-xs-4 col-sm-4 col-md-4">
+            <div class="form-group">
+                <strong>Storage</strong>
+                <input type="number" name="year" class="form-control" value="{{$computer->year}}">
+            </div>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4">
+            <div class="form-group">
+                <strong>Model</strong>
+                <input type="text" name="model" class="form-control" value="{{$computer->model}}">
+            </div>
+        </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary col-3">Submit</button>
         </div>

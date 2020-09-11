@@ -23,7 +23,10 @@ class CreateComputersTable extends Migration
             $table->string('ram');
             $table->string('storage');
             $table->string('detail');
+            $table->string('year');
             $table->timestamps();
+            $table->string('model');
+
         });
     }
 

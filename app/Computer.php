@@ -15,7 +15,9 @@ class Computer extends Model
         'cpu',
         'ram',
         'storage',
-        'detail'
+        'detail',
+        'year',
+        'model'
 
     ];
 
